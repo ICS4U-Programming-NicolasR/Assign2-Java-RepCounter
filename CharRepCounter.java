@@ -1,4 +1,5 @@
 package com.example;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
@@ -81,7 +82,7 @@ public final class CharRepCounter {
                 System.out.println("Press 1 if you would like to output to a "
                         + "file or 2 for the console");
                 String outputType = SCANNER.nextLine();
-                // If they have entered an invalid input then set to a default of file output
+                // If they have entered an invalid input then set to a default
                 if (!outputType.equals(FILE_INPUT_STRING) && !outputType.equals(
                                                     CONSOLE_INPUT_STRING)) {
                     System.out.println("The type you have entered is invalid");
@@ -112,7 +113,7 @@ public final class CharRepCounter {
                         final char[] CHARACTER_LINE_ARRAY =
                                             stringsArray[i].toCharArray();
                         repeatedChar = repCalc(CHARACTER_LINE_ARRAY);
-                        // dependent on how the user wants to output output the value
+                        // dependent on how the user wants to output, output
                         if (outputType.equals(FILE_INPUT_STRING)) {
                             WRITER.write(String.valueOf(repeatedChar + ENTER));
                             WRITER.flush();
